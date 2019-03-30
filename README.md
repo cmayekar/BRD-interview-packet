@@ -104,17 +104,17 @@ The project includes an already implemented sample API endpoint that accesses a 
 ### Suggestions for making changes
 Feel free to structure your code however you wish.  You will likely want to utilize the Vue.js components in `frontend/src/views/` which have already been created.
 
-###Examples
+### Examples
 
-####Pie Chart (already implemented)
+#### Pie Chart (already implemented)
 The pie chart is already implemented and will look something like the following once you have loaded the data.csv file into the people_data table 
 ![Pie Chart](./example-images/pie_chart_example.png)
 
-####Histogram Chart (completed by candidate)
+#### Histogram Chart (completed by candidate)
 This is an example of what the histogram chart should look like once completed by the candidate.  Examine how the Pie Chart was implemented and research the library used to create it in order to create the histogram. 
 ![Histogram Chart](./example-images/histogram_chart_example.png)
 
-####SQL
+#### SQL
 We're going to be using [Sqlite3](https://www.npmjs.com/package/sqlite3) as our in memory relational database for this project. 
 You're going to need to read in data from data.csv using whatever methods you'd like. 
 Given is an example table that showcases the basic syntax for creating a table in Sqlite3. 
@@ -145,7 +145,7 @@ SELECT column1, column2 FROM `table_name`;
 SELECT column1 as data FROM `table_name`;
 ```
 
-####Express
+#### Express
 [Express](https://expressjs.com/) will the be the backend server that your frontend will interact with.
 You can find the code for the express server inside index.js. 
 Here we will be defining our [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) server.
@@ -173,7 +173,7 @@ fetch('http://localhost:3000/sum?x=1&y=2').then(result=>{
 ```
 
 You may want to research Promise based/callback asynchronous calls if you do not understand the syntax. 
-####Vue
+#### Vue
 The file structure is organized into three folders: Views, Containers, and Components.
 Views contain the page to be rendered by the router. This is where you should place your containers or components.
 Containers are a wrapper around your components. They usually handle the fetching and sending of data. 
