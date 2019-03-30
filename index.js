@@ -7,7 +7,7 @@ app.use(express.json())
 var sqlite3 = require('sqlite3').verbose()
 var db = new sqlite3.Database(':memory:')
 
-// list of peoople, gender, age, name, email, address
+// list of people, gender, age, name, email, address
 db.serialize(function () {
     // Add additional DB setup inside this function
     db.run('CREATE TABLE score_data (name TEXT, score INT)')

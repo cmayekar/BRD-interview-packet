@@ -1,63 +1,123 @@
 # BRD Interview Packet
+Expected Completion time (4-8 hours).  Please read this page entirety before you begin.
 
-Expected Completion time (4-8 hours)  
-Inside this repo is a simple Node.js server and Vue.js single page app that is partially completed. Your task is to complete the application based on the requirements below. 
+This is a partially completed project that is intended to be worked by candidates and then submitted back to BRD upon completion.  The project consists of a backend Node.js server and a frontend Vue.js single page application.
 
-# Requirements To Complete The Application
-On the backend:  
- - Load the provided data.csv into the database table people_data  
- - Provide necessary API endpoints for querying the data as you see fit
+## Steps to complete the project
+Please follow the steps below to complete the project.    
 
-On the frontend:  
- - Create a histogram of the ages of people contained in the dataset   
- - Create a form to insert a new row into people_data through a POST call  
- - Display all the people in a meaningful way (perhaps a table)  
- - **Add your own flair to the webpage**   
- Feel free to use any necessary libraries, but be prepared to explain your choices
+1.  Download and unzip the project to your computer (or clone using git)
+1.  Verify you can build and run the application, see [Prerequisites](#prereq)
+1.  Add your changes to complete the application, see [Changes to be made by candidate](#candidatechanges)
+1.  Submit your changes back to BRD, see [Submit changes back to BRD](#submitback)
+
+## Prerequisites<a name="prereq"></a>
+Please make sure you can build and run the application before making any changes.  You must have Node.js installed locally to run the application.
+1.  If not already installed, install [Node.js and NPM](https://nodejs.org/en/)
+1.  Open command/terminal window and install required node modules for the backend and frontend (replace "project" with location you unzipped/cloned project)  
+    ```
+    cd project
+    npm install
+    cd frontend/
+    npm install
+    ```
+1.  Verify that you can run the application, see [Running the application](#runapp)
+
+## Changes to be made by candidates<a name="candidatechanges"></a>
+The following changes should be made by the candidate in order to complete the project.  
+
+### Backend changes
+The following changes should be made to the backend index.js file:  
+ 1. Load the provided data.csv into the database table people_data  
+ 1. Provide necessary API endpoints for querying the data as needed to support the frontend changes
+
+### Frontend changes
+The following changes should be made to the frontend (located under ./frontend):  
+ 1. Create a histogram of the ages of people contained in the dataset   
+ 1. Create a form to insert a new row into people_data through a POST call  
+ 1. Display all the people in a meaningful way (perhaps a table)  
+
+**Add your own flair to the webpages**   
+ Feel free to use any necessary libraries, be prepared to explain your choices
 
 
-## Running the server
+## Running the application<a name="runapp"></a>
+Do the following to startup the application and make it accessible from your browser:
 
-Prerequisites:
- - [Node.js and NPM](https://nodejs.org/en/)
+1.  Open command/terminal window and run the backend [express](https://expressjs.com/) server
+    ```
+    cd project
+    npm start
+    ```
+    You should see something like following once started.  Changes will automatically be recompiled and deployed:
+    ```
+    [nodemon] 1.18.10
+    [nodemon] to restart at any time, enter `rs`
+    [nodemon] watching: *.*
+    [nodemon] starting `node index.js`
+    Example app listening on port 3000!
+    { id: 1, name: 'Kyle', score: 1 }
+    { id: 2, name: 'Danny', score: 5 }
+    { id: 3, name: 'Drew', score: 0 }
+    { id: 4, name: 'Duane', score: 1 }
+    { id: 5, name: 'Jacob', score: 2 }
+    { id: 6, name: 'Michael', score: 2 }
+    ```
+1.  Open command/terminal window and run the frontend
+    ```
+    cd project
+    cd frontend/
+    npm run build -- --mode dev --watch
+    ```
+    You should see something like following once started.  Changes will automatically be recompiled.
+    ```
+     DONE  Compiled successfully in 2923ms                               10:28:24 AM
+    
+      File           Size                          Gzipped
+    
+      dist/app.js    4117.46 KiB                   862.24 KiB
+    
+      Images and other types of assets omitted.
+    
+     DONE  Build complete. Watching for changes...
 
-After downloading this repo, run the following to install all required dependencies:
-
-```
-npm install
-cd frontend/
-npm install
-```
-
-Then to run the [express](https://expressjs.com/) server, run:
-```
-npm start
-```
-This will also automatically redeploy the server when changes are made.  
-To automatically recompile the frontend when changes are made, in another terminal run:
-```
-cd frontend/
-npm run build -- --mode dev --watch
-```
-
+    ```
 The webapp should now be accessible at [http://localhost:3000](http://localhost:3000)
+![Application](./example-images/app-on-startup-example.png)
 
-## Making changes
+## Submit changes back to BRD<a name="submitback"></a>
+Once you have completed all changes the do one of the following to make your changes available to us:
+1.  Create your own git repo
+1.  Send us the link to the repo
 
-Feel free to structure your code however you wish, but you will likely wish to utilize the Vue.js components in `frontend/src/views/` which have already been created.
-The project already includes a sample API endpoint and associated Vue.js component for your reference
+OR
 
-## Examples
-![Pie Chart](./pie_chart_example.png)
+1.  Create a zip of the project
+1.  Email zip back to us
 
-![Histogram Chart](./histogram_chart_example.png)
+IMPORTANT:  Do not include the "node_modules" directory when creating your git repo or zip.  This directory is automatically created when doing an "npm install" and will exist in both ./ and ./frontend.
 
 ## Helpful tips
+Below is information to help you complete the project
+
+### Suggestions for making changes
+Feel free to structure your code however you wish, but you will likely want to utilize the Vue.js components in `frontend/src/views/` which have already been created.
+The project already includes a sample API endpoint with SQL to retrieve data and associated Vue.js component for your reference
+
+###Examples
+####Pie Chart
+The pie chart is already implemented and will display once you have loaded the data.csv into the database
+![Pie Chart](./example-images/pie_chart_example.png)
+
+####Histogram Chart
+This is an example of what the histogram chart should look like once completed by candidate.  Note that you can use the same library used by the pie chart to create the histogram. 
+![Histogram Chart](./example-images/histogram_chart_example.png)
+
 ####SQL
 We're going to be using [Sqlite3](https://www.npmjs.com/package/sqlite3) as our in memory relational database for this project. 
 You're going to need to read in data from data.csv using whatever methods you'd like. 
 Given is an example table that showcases the basic syntax for creating a table in Sqlite3. 
-You're going to have to duplicate and modify this to store the data in data.csv.
+You're going to have to duplicate and modify this to store the data from data.csv.
 ```sql
 CREATE TABLE `table_name` (
     column1 TEXT,
