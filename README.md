@@ -86,7 +86,7 @@ The webapp should now be accessible at [http://localhost:3000](http://localhost:
 ![Application](./example-images/app-on-startup-example.png)
 
 ## Submit changes back to BRD<a name="submitback"></a>
-Once you have completed all changes the do one of the following to make your changes available to us:
+Once you have completed all changes then do one of the following to make your changes available to us:
 ### GIT Repo
 Upload entire project to your own git repo and then provide us with the link to your repo
 
