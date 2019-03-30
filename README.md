@@ -82,7 +82,7 @@ Do the following to startup the application and make it accessible from your bro
      DONE  Build complete. Watching for changes...
 
     ```
-The webapp should now be accessible at [http://localhost:3000](http://localhost:3000)
+The webapp should now be accessible at [http://localhost:3000](http://localhost:3000) and look something like following:
 ![Application](./example-images/app-on-startup-example.png)
 
 ## Submit changes back to BRD<a name="submitback"></a>
