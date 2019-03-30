@@ -1,14 +1,14 @@
 # BRD Interview Packet
 Expected Completion time (4-8 hours).  Please read this page entirety before you begin.
 
-This is a partially completed project that is intended to be worked by candidates and then submitted back to BRD upon completion.  The project consists of a backend Node.js server and a frontend Vue.js single page application. 
+This is a partially completed project that is intended to be worked by candidates and then submitted back to BRD upon completion.  The project is a simple web application with a Node.js backend server and a Vue.js frontend single page application.  The project is partially implemented and can be used as a reference for completing the application.
 
-## Steps to complete the project
+## Steps to complete the project<a name="steps"></a>
 Please follow the steps below to complete the project.    
 
 1.  Download and unzip the project to your computer (or clone using git)
 1.  Verify you can build and run the application, see [Prerequisites](#prereq)
-1.  Add your changes to complete the application, see [Changes to be made by candidate](#candidatechanges)
+1.  Add your changes to the application, see [Changes to be made by candidate](#candidatechanges)
 1.  Submit your changes back to BRD, see [Submit changes back to BRD](#submitback)
 
 ## Prerequisites<a name="prereq"></a>
