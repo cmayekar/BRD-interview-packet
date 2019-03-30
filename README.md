@@ -99,12 +99,13 @@ Zip up the entire project and send it to us via email
 Below is information to help you complete the project.
 
 ### Review the existing code
-The project already includes a sample API endpoint that accesses a database table to retrieve data and associated Vue.js component to display the data for your reference. 
+The project includes an already implemented sample API endpoint that accesses a database table to retrieve data and associated Vue.js component to display the data for your reference. 
 
 ### Suggestions for making changes
 Feel free to structure your code however you wish.  You will likely want to utilize the Vue.js components in `frontend/src/views/` which have already been created.
 
 ###Examples
+
 ####Pie Chart (already implemented)
 The pie chart is already implemented and will look something like the following once you have loaded the data.csv file into the people_data table 
 ![Pie Chart](./example-images/pie_chart_example.png)
