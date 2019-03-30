@@ -87,15 +87,14 @@ The webapp should now be accessible at [http://localhost:3000](http://localhost:
 
 ## Submit changes back to BRD<a name="submitback"></a>
 Once you have completed all changes the do one of the following to make your changes available to us:
-1.  Create your own git repo
-1.  Send us the link to the repo
+### GIT Repo
+Upload entire project to your own git repo and then provide us with the link to your repo
 
 OR
+### Zip File
+Zip up the entire project and send it to us via email
 
-1.  Create a zip of the project
-1.  Email zip back to us
-
-IMPORTANT:  Do not include the "node_modules" directory when creating your git repo or zip.  This directory is automatically created when doing an "npm install" and will exist in both ./ and ./frontend.
+**IMPORTANT**:  Do not include the ***"node_modules"*** directory when creating your git repo or zip.  This directory is automatically created when doing an "npm install" and will be very large.  This directory will exist in both ***project/*** and ***project/frontend*** so will need to be excluded from both locations.
 
 ## Helpful tips
 Below is information to help you complete the project
