@@ -1,7 +1,7 @@
 # BRD Interview Packet
 Expected Completion time (4-8 hours).  Please read this page entirety before you begin.
 
-This is a partially completed project that is intended to be worked by candidates and then submitted back to BRD upon completion.  The project consists of a backend Node.js server and a frontend Vue.js single page application.
+This is a partially completed project that is intended to be worked by candidates and then submitted back to BRD upon completion.  The project consists of a backend Node.js server and a frontend Vue.js single page application. 
 
 ## Steps to complete the project
 Please follow the steps below to complete the project.    
@@ -90,26 +90,27 @@ Once you have completed all changes then do one of the following to make your ch
 ### GIT Repo
 Upload entire project to your own git repo and then provide us with the link to your repo
 
-OR
 ### Zip File
 Zip up the entire project and send it to us via email
 
 **IMPORTANT**:  Do not include the ***"node_modules"*** directory when creating your git repo or zip.  This directory is automatically created when doing an "npm install" and will be very large.  This directory will exist in both ***project/*** and ***project/frontend*** so will need to be excluded from both locations.
 
 ## Helpful tips
-Below is information to help you complete the project
+Below is information to help you complete the project.
+
+### Review the existing code
+The project already includes a sample API endpoint that accesses a database table to retrieve data and associated Vue.js component to display the data for your reference. 
 
 ### Suggestions for making changes
-Feel free to structure your code however you wish, but you will likely want to utilize the Vue.js components in `frontend/src/views/` which have already been created.
-The project already includes a sample API endpoint with SQL to retrieve data and associated Vue.js component for your reference
+Feel free to structure your code however you wish.  You will likely want to utilize the Vue.js components in `frontend/src/views/` which have already been created.
 
 ###Examples
-####Pie Chart
-The pie chart is already implemented and will display once you have loaded the data.csv into the database
+####Pie Chart (already implemented)
+The pie chart is already implemented and will look something like the following once you have loaded the data.csv file into the people_data table 
 ![Pie Chart](./example-images/pie_chart_example.png)
 
-####Histogram Chart
-This is an example of what the histogram chart should look like once completed by candidate.  Note that you can use the same library used by the pie chart to create the histogram. 
+####Histogram Chart (completed by candidate)
+This is an example of what the histogram chart should look like once completed by the candidate.  Examine how the Pie Chart was implemented and research the library used to create it in order to create the histogram. 
 ![Histogram Chart](./example-images/histogram_chart_example.png)
 
 ####SQL
