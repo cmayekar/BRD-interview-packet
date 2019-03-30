@@ -1,4 +1,4 @@
-# BRD Interview Packet
+# Full Stack Interview Packet
 Expected Completion time (4-8 hours).  Please read this page entirety before you begin.
 
 This is a partially completed project that is intended to be worked by candidates and then submitted back to BRD upon completion.  The project is a simple web application with a Node.js backend server and a Vue.js frontend single page application.  The project is partially implemented and can be used as a reference for completing the application.
