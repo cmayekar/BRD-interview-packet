@@ -1,6 +1,7 @@
 <template>
 <PersonForm v-on:submit-person-form="insertData"></PersonForm>
 </template>
+
 <script>
 import PersonForm from '../components/PersonForm'
     export default {
@@ -23,9 +24,10 @@ import PersonForm from '../components/PersonForm'
                        },
                        body: JSON.stringify(person)
                    }).then(response => {
-
-                   })
-
+                        console.log(response);
+                   }).catch((err) =>
+                       console.log(err)
+                   )
                }
            }
         }

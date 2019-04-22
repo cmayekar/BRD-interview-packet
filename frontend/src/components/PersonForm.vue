@@ -1,10 +1,15 @@
 <template>
     <div>
-        <span>First Name: </span>
-        <input type="text" v-model="personData.firstName"/>
+        <input type="text" placeholder="First name" v-model="personData.firstName"/>
+        <input type="text" placeholder="Last name" v-model="personData.lastName"/>
+        <input type="text" placeholder="Gender" v-model="personData.gender"/>
+        <input type="number" placeholder="Age" v-model="personData.age"/>
         <button v-on:click="submitForm">Submit</button>
     </div>
+
+
 </template>
+
 <script>
     export default {
         name: 'PersonForm',
@@ -15,7 +20,8 @@
                     lastName: '',
                     age: 0,
                     gender: ''
-                }
+                },
+                isModalVisible: false,
             }
         },
         methods: {

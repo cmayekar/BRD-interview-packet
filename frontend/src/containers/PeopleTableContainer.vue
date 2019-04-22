@@ -1,5 +1,6 @@
 <template>
     <Table :rows="rows" v-on:refresh-table="getPeople"></Table>
+
 </template>
 <script>
     import Table from '../components/Table';
@@ -10,8 +11,8 @@
            Table
         },
         data() {
-            return {
-               rows: []
+            return{
+                rows: []
             }
         },
         mounted() {

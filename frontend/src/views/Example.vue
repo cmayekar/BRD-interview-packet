@@ -12,7 +12,7 @@
         </thead>
         <tbody>
           <tr v-for="row in scores">
-            <td> {{row.id}}</td>
+            <td> {{row.rowid}}</td>
             <td> {{row.name}} </td>
             <td> {{row.score}} </td>
           </tr>
